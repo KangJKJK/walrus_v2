@@ -47,7 +47,6 @@ case $choice in
     nvm install --lts
     nvm use --lts
     npm install
-    npm run setup
 
     echo -e "${YELLOW}해당사이트로 이동하여 월렛을 연결해주세요: https://stake.walrus.site/ ${NC}"
     echo -e "${GREEN}해당사이트에서 Faucet을 받아주세요: https://discord.com/invite/sui${NC}"
