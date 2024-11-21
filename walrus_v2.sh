@@ -65,7 +65,7 @@ case $choice in
             echo "  \"$line\","
         done
         echo "];"  # 배열 끝
-    } > "$WORK/config/proxiy_list.js"
+   } > "$WORK/config/proxy_list.js"
 
     # config파일 생성
     echo -e "${YELLOW}SWAPCOUNT 값을 입력하세요. 기본값은 10입니다.${NC}"
