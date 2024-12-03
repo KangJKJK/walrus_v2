@@ -46,6 +46,7 @@ case $choice in
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # nvm을 로드합니다
     nvm install --lts
     nvm use --lts
+    apt install npm
     npm install
 
     echo -e "${YELLOW}해당사이트로 이동하여 월렛을 연결해주세요: https://stake.walrus.site/ ${NC}"
