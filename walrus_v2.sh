@@ -42,13 +42,13 @@ case $choice in
 
     # Node.js LTS 버전 설치 및 사용
     echo -e "${YELLOW}Node.js LTS 버전을 설치하고 설정 중...${NC}"
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # nvm을 로드합니다
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+    source ~/.bashrc
     nvm install --lts
     nvm use --lts
     apt install npm
     npm install
-    npm install https-proxy-agent
+    npm install socks-proxy-agent https-proxy-agent proxy-agent
 
     echo -e "${YELLOW}해당사이트로 이동하여 월렛을 연결해주세요: https://stake.walrus.site/ ${NC}"
     echo -e "${GREEN}해당사이트에서 Faucet을 받아주세요: https://discord.com/invite/sui${NC}"
