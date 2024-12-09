@@ -44,11 +44,8 @@ case $choice in
     echo -e "${YELLOW}Node.js LTS 버전을 설치하고 설정 중...${NC}"
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
     source ~/.bashrc
-    nvm install --lts
-    nvm use --lts
-    apt install npm
-    npm install
-    npm install socks-proxy-agent https-proxy-agent proxy-agent
+    nvm install 20.11.1
+    nvm use 20.11.1
 
     echo -e "${YELLOW}해당사이트로 이동하여 월렛을 연결해주세요: https://stake.walrus.site/ ${NC}"
     echo -e "${GREEN}해당사이트에서 Faucet을 받아주세요: https://discord.com/invite/sui${NC}"
