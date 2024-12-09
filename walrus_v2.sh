@@ -43,6 +43,9 @@ case $choice in
     # Node.js LTS 버전 설치 및 사용
     echo -e "${YELLOW}Node.js LTS 버전을 설치하고 설정 중...${NC}"
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
     source ~/.bashrc
     nvm install 20.11.1
     nvm use 20.11.1
