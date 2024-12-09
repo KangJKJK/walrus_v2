@@ -123,7 +123,8 @@ case $choice in
 
         # 봇 구동
         npm install -g shx
-       npm install
+        npm install socks-proxy-agent
+        npm install
         npm run start
 
         ;;
