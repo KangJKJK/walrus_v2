@@ -122,6 +122,8 @@ case $choice in
     } > "$WORK/accounts/accounts.js"
 
         # 봇 구동
+        npm install -g shx
+       npm install
         npm run start
 
         ;;
